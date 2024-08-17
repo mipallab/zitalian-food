@@ -148,7 +148,6 @@ $copyright = [
  */
 
  // home slider
-
  $slides = [
     [
         'img'   => 'https://cdn.create.vista.com/api/media/small/11007137/stock-photo-oriental-food',
@@ -232,5 +231,55 @@ $copyright = [
                 'link'  => '#'
             ]
         ]
+    ]
+];
+
+
+/**
+ * 
+ * Location Page
+ * 
+ */
+
+ // address
+ $address = [
+    'title' => 'Address',
+    'desc'  => '1650 Monohardi, Narshingdi, Dhaka, Bangladesh(BD)'
+ ];
+
+ $workScedule = [
+    'title' => 'Hours Of Operation',
+    'scedule'   => [
+        [
+            'day'   => 'MONDAY-FRIDAY',
+            'time'  => '8am-6pm'
+        ],
+        [
+            'day'   => 'SATURDAY-SUNDAY',
+            'time'  => '8am-10pm'
+        ]
+    ]
+ ];
+
+
+ $contactInfo = [
+    'title' => 'Contact Info',
+    'name'  => [
+      [
+        'title' => "EMAIL ADDRESS",
+        'value' => 'pallab4842@gmail.com'
+      ],
+      [
+        'title' => "TELEPHONE",
+        'value' => '+8801713564842'
+      ],
+      [
+        'title' => "FAX",
+        'value' => '+8801713564842'
+      ],
+      [
+        'title' => "WHATS APP",
+        'value' => '+8801713564842'
+      ]
     ]
 ];
