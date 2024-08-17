@@ -1,34 +1,24 @@
 <?php
-	require_once(__DIR__. "/header.php");
+if ( file_exists(__DIR__. "/header.php") ) {
+    require_once(__DIR__. "/header.php");
+} else {
+    echo "Header.php file not found!";
+}
+	
 ?>
 
 <div class="zerogrid">
     <div class="callbacks_container">
         <ul class="rslides" id="slider4">
+            <?php foreach ( $slides as  $slide ) :?>
             <li>
-                <img src="images/banner1.jpg" alt="">
+                <img src="<?php echo $slide['img'];?>" alt="">
                 <div class="caption">
-                    <h2>We've got the best spareribs in town.</h2></br>
-                    <p>Nulla eget mauris quis elit mollis ornare vitae ut odio. Cras tincidunt, augue vitae sollicitudin
-                        commodo,quam elit varius est, et ornare ante massa quis tellus. Mauris nec lacinia nisl. </p>
+                    <h2> <?php echo $slide['title'];?></h2></br>
+                    <p><?php echo $slide['desc'];?></p>
                 </div>
             </li>
-            <li>
-                <img src="images/banner2.jpg" alt="">
-                <div class="caption">
-                    <h2>If food is an experience, then you'll find it at the restaurant.</h2></br>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                        ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-                </div>
-            </li>
-            <li>
-                <img src="images/banner3.jpg" alt="">
-                <div class="caption">
-                    <h2>Enjoy our take-away menu.</h2></br>
-                    <p>At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam
-                        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-                </div>
-            </li>
+            <?php endforeach;?>
         </ul>
     </div>
 </div>
@@ -41,8 +31,8 @@
             <div class="zerogrid">
                 <div class="row box-item">
                     <!--Start Box-->
-                    <h2>“Your awesome company slogan goes here, we have the best food around”</h2>
-                    <span>Unc elementum lacus in gravida pellentesque urna dolor eleifend felis eleifend</span>
+                    <h2><?php echo $quations['title'];?></h2>
+                    <span><?php echo $quations['desc'];?></span>
                 </div>
             </div>
         </section>
@@ -57,74 +47,20 @@
                         <span>text text text text text</span>
                     </div>
                     <div class="row">
+
+                        <?php foreach ($welcomeMenu['menu_items'] as $welMenu):?>
                         <div class="col-1-3">
                             <div class="wrap-col">
                                 <div class="box-item">
-                                    <span class="ribbon">Menu Card<b></b></span>
-                                    <img src="images/menu.jpg" alt="">
-                                    <p>The sliding menucard will surely impress your customers! Set up several pages and
-                                        display them side by side, just as on a paper menucard!</p>
-                                    <a href="#" class="button button-1">Detail</a>
+                                    <span class="ribbon"><?php echo $welMenu['ribbon'];?><b></b></span>
+                                    <img src="<?php echo $welMenu['img'];?>" alt="">
+                                    <p><?php echo $welMenu['desc'];?></p>
+                                    <a href="<?php echo $welMenu['btn']['link'];?>"
+                                        class="button button-1"><?php echo $welMenu['btn']['title'];?></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-1-3">
-                            <div class="wrap-col">
-                                <div class="box-item">
-                                    <span class="ribbon">Fast Food<b></b></span>
-                                    <img src="images/fast-food.jpg" alt="">
-                                    <p>The sliding menucard will surely impress your customers! Set up several pages and
-                                        display them side by side, just as on a paper menucard!</p>
-                                    <a href="#" class="button button-1">Detail</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-1-3">
-                            <div class="wrap-col">
-                                <div class="box-item">
-                                    <span class="ribbon">Reservation<b></b></span>
-                                    <img src="images/reservation.jpg" alt="">
-                                    <p>The sliding menucard will surely impress your customers! Set up several pages and
-                                        display them side by side, just as on a paper menucard!</p>
-                                    <a href="#" class="button button-1">Detail</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-1-3">
-                            <div class="wrap-col">
-                                <div class="box-item">
-                                    <span class="ribbon">Chef<b></b></span>
-                                    <img src="images/chef.jpg" alt="">
-                                    <p>The sliding menucard will surely impress your customers! Set up several pages and
-                                        display them side by side, just as on a paper menucard!</p>
-                                    <a href="#" class="button button-1">Detail</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-1-3">
-                            <div class="wrap-col">
-                                <div class="box-item">
-                                    <span class="ribbon">Preview<b></b></span>
-                                    <img src="images/preview.jpg" alt="">
-                                    <p>The sliding menucard will surely impress your customers! Set up several pages and
-                                        display them side by side, just as on a paper menucard!</p>
-                                    <a href="#" class="button button-1">Detail</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-1-3">
-                            <div class="wrap-col">
-                                <div class="box-item">
-                                    <span class="ribbon">Text Heading<b></b></span>
-                                    <img src="images/reservation.jpg" alt="">
-                                    <p>The sliding menucard will surely impress your customers! Set up several pages and
-                                        display them side by side, just as on a paper menucard!</p>
-                                    <a href="#" class="button button-1">Detail</a>
-                                </div>
-                            </div>
-                        </div>
+                        <?php endforeach;?>
                     </div>
                 </div>
             </div>
@@ -134,6 +70,12 @@
 
 
 <?php
-	require_once(__DIR__."/footer.php");
 
+if ( file_exists(__DIR__.'/footer.php') ) {
+    require_once(__DIR__."/footer.php");
+
+} else {
+    echo "footer.php file not found!";
+}
+	
 ?>

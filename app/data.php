@@ -116,7 +116,7 @@ $widget = [
     
 
 
-
+// copyright 
 $copyright = [
     'title' => 'Copyright 2024 - Designed by <a href="#">Khaw Moja Paw</a>',
     'pages' => [
@@ -131,6 +131,106 @@ $copyright = [
         [
             'link'  => '#',
             'p_title'  => 'About Us'
+        ]
+    ]
+];
+
+
+
+
+
+
+
+/**
+ * 
+ * Home Page Option
+ * 
+ */
+
+ // home slider
+
+ $slides = [
+    [
+        'img'   => 'https://cdn.create.vista.com/api/media/small/11007137/stock-photo-oriental-food',
+        'title' => "Hazir Beriyani",
+        'desc'  => 'Nulla eget mauris quis elit mollis ornare vitae ut odio. Cras tincidunt, augue vitae sollicitudin commodo,quam elit varius est, et ornare ante massa quis tellus. Mauris nec lacinia nisl. '
+    ],
+    [
+        'img'   => 'https://www.eatingwell.com/thmb/m5xUzIOmhWSoXZnY-oZcO9SdArQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/article_291139_the-top-10-healthiest-foods-for-kids_-02-4b745e57928c4786a61b47d8ba920058.jpg',
+        'title' => "Babur Bari Teheri",
+        'desc'  => 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.'
+    ],
+    [
+        'img'   => 'https://images.immediate.co.uk/production/volatile/sites/30/2023/06/Ultraprocessed-food-58d54c3.jpg?quality=90&resize=440,400',
+        'title' => "Matir Bashon",
+        'desc'  => 'At vero eos et accusam et justo duo dolores et ea rebum. Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.'
+    ]
+ ];
+
+ // quations
+ $quations = [
+    'title' => '“Your awesome company slogan goes here, we have the best food around”',
+    'desc'  => 'Unc elementum lacus in gravida pellentesque urna dolor eleifend felis eleifend'   
+ ];
+
+ //welcome menu
+ $welcomeMenu = [
+    'title' => 'Susagotom',
+    'sub_title' => 'Unc elementum lacus in gravida pellentesque urna',
+    'menu_items' => [
+        [
+            'ribbon'    => "Menu Card",
+            'img'       => 'images/menu.jpg',
+            'desc'      => 'The sliding menucard will surely impress your customers! Set up several pages and display them side by side, just as on a paper menucard!',
+            'btn'      => [
+                'title' => 'Details',
+                'link'  => '#'
+            ]
+        ],
+        [
+            'ribbon'    => "Reservation<",
+            'img'       => 'images/reservation.jpg',
+            'desc'      => 'The sliding menucard will surely impress your customers! Set up several pages and display them side by side, just as on a paper menucard!',
+            'btn'      => [
+                'title' => 'Details',
+                'link'  => '#'
+            ]
+        ],
+        [
+            'ribbon'    => "Chef",
+            'img'       => 'images/chef.jpg',
+            'desc'      => 'The sliding menucard will surely impress your customers! Set up several pages and display them side by side, just as on a paper menucard!',
+            'btn'      => [
+                'title' => 'Details',
+                'link'  => '#'
+            ]
+        ],
+        [
+            'ribbon'    => "Preview",
+            'img'       => 'images/preview.jpg',
+            'desc'      => 'The sliding menucard will surely impress your customers! Set up several pages and display them side by side, just as on a paper menucard!',
+            'btn'      => [
+                'title' => 'Details',
+                'link'  => '#'
+            ]
+        ],
+        [
+            'ribbon'    => "Text Heading",
+            'img'       => 'images/reservation.jpg',
+            'desc'      => 'The sliding menucard will surely impress your customers! Set up several pages and display them side by side, just as on a paper menucard!',
+            'btn'      => [
+                'title' => 'Details',
+                'link'  => '#'
+            ]
+        ],
+        [
+            'ribbon'    => "Text Heading",
+            'img'       => 'images/reservation.jpg',
+            'desc'      => 'The sliding menucard will surely impress your customers! Set up several pages and display them side by side, just as on a paper menucard!',
+            'btn'      => [
+                'title' => 'Details',
+                'link'  => '#'
+            ]
         ]
     ]
 ];
