@@ -93,7 +93,7 @@ $widget = [
     'testimonial' => [
         [
         'name' => 'Nick Roach',
-        'image' => 'images/a-1.jpg',
+        'image' => 'https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1723766400&semt=ais_hybrid',
         'desc'  => 'Pellentesque elementum leo et justo dapibus convalli. In justo nibh, congue nec dapibus ac, placerat eget sem. Nunc consequat felis non elit ultricies in varius massa laoreet. Aenean lectus nisl, ellentesque in fermentum sit amet, convallis a lorem condimentum mollis. Aenean lectus nisl, ellentesque in fermentum sit amet.'
         ]
     ],
@@ -282,4 +282,104 @@ $copyright = [
         'value' => '+8801713564842'
       ]
     ]
+];
+
+
+
+
+/**
+ * 
+ * Staff Section
+ */
+
+ $staffs = [
+    [
+        'img'   => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkz9DAeOIb37VEhLbtNHIgFhBQhFVL3YBQ89MJkoXTThkVzFaUQe5RUu4XtQF-bQUY1b8&usqp=CAU',
+        'name'  => 'Chef\'s Name',
+        'socialInfo'    => [
+            [
+                'link' => 'https://x.com/',
+                'icon'  => '<i class="fa fa-twitter"></i>'
+            ],
+            [
+                'link' => 'https://www.facebook.com/',
+                'icon'  => '<i class="fa fa-facebook"></i>'
+            ],
+            [
+                'link' => 'https://www.linkedin.com/',
+                'icon'  => '<i class="fa fa-linkedin"></i>'
+            ],
+            [
+                'link' => 'https://www.instagram.com/',
+                'icon'  => '<i class="fa fa-instagram"></i>'
+            ]
+        ]
+        ],
+        [
+            'img'   => 'images/chef-1.jpg',
+            'name'  => 'Chef\'s Name',
+            'socialInfo'    => [
+                [
+                    'link' => 'https://x.com/',
+                    'icon'  => '<i class="fa fa-twitter"></i>'
+                ],
+                [
+                    'link' => 'https://www.facebook.com/',
+                    'icon'  => '<i class="fa fa-facebook"></i>'
+                ],
+                [
+                    'link' => 'https://www.linkedin.com/',
+                    'icon'  => '<i class="fa fa-linkedin"></i>'
+                ],
+                [
+                    'link' => 'https://www.instagram.com/',
+                    'icon'  => '<i class="fa fa-instagram"></i>'
+                ]
+            ]
+        ],
+        [
+            'img'   => 'https://cdn.vectorstock.com/i/preview-1x/77/17/chef-avatar-icon-vector-32077717.jpg',
+            'name'  => 'Chef\'s Name',
+            'socialInfo'    => [
+                [
+                    'link' => 'https://x.com/',
+                    'icon'  => '<i class="fa fa-twitter"></i>'
+                ],
+                [
+                    'link' => 'https://www.facebook.com/',
+                    'icon'  => '<i class="fa fa-facebook"></i>'
+                ],
+                [
+                    'link' => 'https://www.linkedin.com/',
+                    'icon'  => '<i class="fa fa-linkedin"></i>'
+                ],
+                [
+                    'link' => 'https://www.instagram.com/',
+                    'icon'  => '<i class="fa fa-instagram"></i>'
+                ]
+            ]
+        ]
+        ,
+        [
+            'img'   => 'https://cdn2.iconfinder.com/data/icons/professions/512/cook_woman_user-512.png',
+            'name'  => 'Chef\'s Name',
+            'socialInfo'    => [
+                [
+                    'link' => 'https://x.com/',
+                    'icon'  => '<i class="fa fa-twitter"></i>'
+                ],
+                [
+                    'link' => 'https://www.facebook.com/',
+                    'icon'  => '<i class="fa fa-facebook"></i>'
+                ],
+                [
+                    'link' => 'https://www.linkedin.com/',
+                    'icon'  => '<i class="fa fa-linkedin"></i>'
+                ],
+                [
+                    'link' => 'https://www.instagram.com/',
+                    'icon'  => '<i class="fa fa-instagram"></i>'
+                ]
+            ]
+        ]
 ];

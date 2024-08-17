@@ -7,9 +7,9 @@
                     <h4><?php echo $widget['title'];?></h4>
                     <div class="row">
                         <?php foreach ( $widget['testimonial'] as $testmonials ):?>
-                        <img src="<?php echo $testmonials['image'];?>">
+                        <img style="width:60px; height:60px" src="<?php echo $testmonials['image'];?>">
                         <h5><?php echo $testmonials['name'];?></h5>
-                        <p><?php echo $testmonials['desc'];?></p>
+                        <p style="text-align: justify;"><?php echo $testmonials['desc'];?></p>
                         <?php endforeach; ?>
                     </div>
                 </div>
