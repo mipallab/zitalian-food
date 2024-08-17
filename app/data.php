@@ -383,3 +383,70 @@ $copyright = [
             ]
         ]
 ];
+
+
+/**
+ * Gallery Page
+ */
+$gallerys = [
+    [
+        'link'  => '#',
+        'title' => 'img 1',
+        'img'   => 'images/4.jpg'
+    ],
+    [
+        'link'  => '#',
+        'title' => 'img 2',
+        'img'   => 'images/5.jpg'
+    ],
+    [
+        'link'  => '#',
+        'title' => 'img 3',
+        'img'   => 'images/6.jpg'
+    ],
+    [
+        'link'  => '#',
+        'title' => 'img 4',
+        'img'   => 'images/7.jpg'
+    ],
+    [
+        'link'  => '#',
+        'title' => 'img 5',
+        'img'   => 'images/8.jpg'
+    ],
+    [
+        'link'  => '#',
+        'title' => 'img 6',
+        'img'   => 'images/9.jpg'
+    ],
+    [
+        'link'  => '#',
+        'title' => 'img 7',
+        'img'   => 'images/10.jpg'
+    ],
+    [
+        'link'  => '#',
+        'title' => 'img 8',
+        'img'   => 'images/11.jpg'
+    ],
+    [
+        'link'  => '#',
+        'title' => 'img 9',
+        'img'   => 'images/12.jpg'
+    ],
+    [
+        'link'  => '#',
+        'title' => 'img 10',
+        'img'   => 'images/13.jpg'
+    ],
+    [
+        'link'  => '#',
+        'title' => 'img 11',
+        'img'   => 'images/14.jpg'
+    ],
+    [
+        'link'  => '#',
+        'title' => 'img 12',
+        'img'   => 'images/15.jpg'
+    ]
+];
