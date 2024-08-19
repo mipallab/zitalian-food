@@ -1,11 +1,11 @@
 <!-- Header -->
 <?php
-if ( file_exists(__DIR__. "/header.php") ) {
-    require_once(__DIR__. "/header.php");
+if (file_exists(__DIR__ . "/header.php")) {
+    require_once(__DIR__ . "/header.php");
 } else {
     echo "Header.php file not found!";
 }
-	
+
 ?>
 
 <!--////////////////////////////////////Container-->
@@ -20,164 +20,29 @@ if ( file_exists(__DIR__. "/header.php") ) {
         <div id="main-content">
             <div class="wrap-content">
                 <div class="row">
-                    <div class="col-1-3">
-                        <div class="wrap-col">
-                            <h3>Pasta Plates</h3>
-                            <div class="post">
-                                <a href="#"><img src="images/15.jpg" /></a>
-                                <div class="wrapper">
-                                    <h5><a href="#">Lorem ipsum dolor</a></h5>
-                                    <span>$25 - $26</span>
-                                </div>
-                            </div>
-                            <div class="post">
-                                <a href="#"><img src="images/10.jpg" /></a>
-                                <div class="wrapper">
-                                    <h5><a href="#">Lorem ipsum dolor</a></h5>
-                                    <span>$25 - $26</span>
-                                </div>
-                            </div>
-                            <div class="post">
-                                <a href="#"><img src="images/9.jpg" /></a>
-                                <div class="wrapper">
-                                    <h5><a href="#">Lorem ipsum dolor</a></h5>
-                                    <span>$25 - $26</span>
-                                </div>
+
+
+                    <?php foreach ($foods_menus as $foodMenu): ?>
+                        <div class="col-1-3">
+                            <div class="wrap-col">
+                                <h3><?php echo $foodMenu['name']; ?></h3>
+
+                                <?php foreach ($foodMenu['items'] as $item): ?>
+                                    <div class="post">
+                                        <a href="<?php echo $item['link']; ?>"><img style="width:100px; height:65px;"
+                                                src="<?php echo $item['img']; ?>" /></a>
+                                        <div class="wrapper">
+                                            <h5><a href="<?php echo $item['link']; ?>"><?php echo $item['title']; ?></a></h5>
+                                            <span><?php echo $item['price']; ?></span>
+                                        </div>
+                                    </div>
+                                <?php endforeach; ?>
+
                             </div>
                         </div>
-                    </div>
-                    <div class="col-1-3">
-                        <div class="wrap-col">
-                            <h3>Starters</h3>
-                            <div class="post">
-                                <a href="#"><img src="images/14.jpg" /></a>
-                                <div class="wrapper">
-                                    <h5><a href="#">Lorem ipsum dolor</a></h5>
-                                    <span>$25 - $26</span>
-                                </div>
-                            </div>
-                            <div class="post">
-                                <a href="#"><img src="images/8.jpg" /></a>
-                                <div class="wrapper">
-                                    <h5><a href="#">Lorem ipsum dolor</a></h5>
-                                    <span>$25 - $26</span>
-                                </div>
-                            </div>
-                            <div class="post">
-                                <a href="#"><img src="images/7.jpg" /></a>
-                                <div class="wrapper">
-                                    <h5><a href="#">Lorem ipsum dolor</a></h5>
-                                    <span>$25 - $26</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-1-3">
-                        <div class="wrap-col">
-                            <h3>Salads</h3>
-                            <div class="post">
-                                <a href="#"><img src="images/13.jpg" /></a>
-                                <div class="wrapper">
-                                    <h5><a href="#">Lorem ipsum dolor</a></h5>
-                                    <span>$25 - $26</span>
-                                </div>
-                            </div>
-                            <div class="post">
-                                <a href="#"><img src="images/4.jpg" /></a>
-                                <div class="wrapper">
-                                    <h5><a href="#">Lorem ipsum dolor</a></h5>
-                                    <span>$25 - $26</span>
-                                </div>
-                            </div>
-                            <div class="post">
-                                <a href="#"><img src="images/5.jpg" /></a>
-                                <div class="wrapper">
-                                    <h5><a href="#">Lorem ipsum dolor</a></h5>
-                                    <span>$25 - $26</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1-3">
-                        <div class="wrap-col">
-                            <h3>Chef's Specials</h3>
-                            <div class="post">
-                                <a href="#"><img src="images/15.jpg" /></a>
-                                <div class="wrapper">
-                                    <h5><a href="#">Lorem ipsum dolor</a></h5>
-                                    <span>$25 - $26</span>
-                                </div>
-                            </div>
-                            <div class="post">
-                                <a href="#"><img src="images/10.jpg" /></a>
-                                <div class="wrapper">
-                                    <h5><a href="#">Lorem ipsum dolor</a></h5>
-                                    <span>$25 - $26</span>
-                                </div>
-                            </div>
-                            <div class="post">
-                                <a href="#"><img src="images/9.jpg" /></a>
-                                <div class="wrapper">
-                                    <h5><a href="#">Lorem ipsum dolor</a></h5>
-                                    <span>$25 - $26</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-1-3">
-                        <div class="wrap-col">
-                            <h3>Fast Food</h3>
-                            <div class="post">
-                                <a href="#"><img src="images/14.jpg" /></a>
-                                <div class="wrapper">
-                                    <h5><a href="#">Lorem ipsum dolor</a></h5>
-                                    <span>$25 - $26</span>
-                                </div>
-                            </div>
-                            <div class="post">
-                                <a href="#"><img src="images/8.jpg" /></a>
-                                <div class="wrapper">
-                                    <h5><a href="#">Lorem ipsum dolor</a></h5>
-                                    <span>$25 - $26</span>
-                                </div>
-                            </div>
-                            <div class="post">
-                                <a href="#"><img src="images/7.jpg" /></a>
-                                <div class="wrapper">
-                                    <h5><a href="#">Lorem ipsum dolor</a></h5>
-                                    <span>$25 - $26</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-1-3">
-                        <div class="wrap-col">
-                            <h3>Seafood Specials</h3>
-                            <div class="post">
-                                <a href="#"><img src="images/13.jpg" /></a>
-                                <div class="wrapper">
-                                    <h5><a href="#">Lorem ipsum dolor</a></h5>
-                                    <span>$25 - $26</span>
-                                </div>
-                            </div>
-                            <div class="post">
-                                <a href="#"><img src="images/4.jpg" /></a>
-                                <div class="wrapper">
-                                    <h5><a href="#">Lorem ipsum dolor</a></h5>
-                                    <span>$25 - $26</span>
-                                </div>
-                            </div>
-                            <div class="post">
-                                <a href="#"><img src="images/5.jpg" /></a>
-                                <div class="wrapper">
-                                    <h5><a href="#">Lorem ipsum dolor</a></h5>
-                                    <span>$25 - $26</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <?php endforeach; ?>
+
+
                 </div>
             </div>
         </div>
@@ -188,11 +53,10 @@ if ( file_exists(__DIR__. "/header.php") ) {
 <!-- Footer -->
 <?php
 
-if ( file_exists(__DIR__.'/footer.php') ) {
-    require_once(__DIR__."/footer.php");
-
+if (file_exists(__DIR__ . '/footer.php')) {
+    require_once(__DIR__ . "/footer.php");
 } else {
     echo "footer.php file not found!";
 }
-	
+
 ?>
